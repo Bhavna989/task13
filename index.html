@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: lightblue;
+            }
+            .btn-green {
+                background-color: green;
+                color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+            }
+            .btn-red {
+                background-color: red;
+                color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+            }
+            .btn-blue {
+                background-color: blue;
+                color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+            }
+            .btn-green:hover, .btn-red:hover, .btn-blue:hover {
+                opacity: 0.8;
+            }
+        </style>
+        <script src="jscript.js" defer></script>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Student Information Form</h1>
+        <div style="text-align: center; padding: 20px;">
+            <table style="margin: auto; border-spacing: 10px;">
+                <tr>
+                    <td><input id="name" placeholder="Enter Name"/></td>
+                    <td><input id="dob" placeholder="Enter Date of Birth"/></td>
+                </tr>
+                <tr>
+                    <td><input id="degree" placeholder="Enter Degree" /></td>
+                    <td><input id="course" placeholder="Enter Course" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input id="university" placeholder="Enter University Name" style="width: 100%;"/></td>
+                </tr>
+                <tr>
+                    <td><button onclick="Insert();" class="btn-green">Insert</button></td>
+                    <td><button onclick="student_info();" class="btn-red">Show all</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="clearInputs();" class="btn-green">Clear Inputs</button></td>
+                    <td><button onclick="clearDisplay();" class="btn-red">Clear Display</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input id="search" placeholder="Search by Name" style="width: 100%;"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><button onclick="searchStudent();" class="btn-blue">Search</button></td>
+                </tr>
+            </table>
+        </div>
+        <div id="demo_div" style="margin-top: 20px; text-align: center;"></div>
+    </body>
+</html>
